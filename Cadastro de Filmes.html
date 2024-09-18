@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Filmes Assistidos</title>
+    <link rel="stylesheet" type="text/css" href="Cadastro de Filmes.css">
+</head>
+<body>
+    <h1>Cadastro de Filmes Assistidos</h1>
+    <p>Complete os campos com suas informações</p>
+
+    <form action="#" method="POST">
+        <label for="nomeFilme">Nome do Filme:</label><br>
+        <input type="text" id="nomeFilme" name="nomeFilme" required><br><br>
+
+        <label for="genero">Gênero do Filme:</label><br>
+        <input type="radio" id="acao" name="genero" value="Ação">
+        <label for="acao">Ação</label><br>
+
+        <input type="radio" id="comedia" name="genero" value="Comédia">
+        <label for="comedia">Comédia</label><br>
+
+        <input type="radio" id="drama" name="genero" value="Drama">
+        <label for="drama">Drama</label><br>
+
+        <input type="radio" id="ficcao" name="genero" value="Ficção Científica">
+        <label for="ficcao">Ficção Científica</label><br>
+
+        <input type="radio" id="terror" name="genero" value="Terror">
+        <label for="terror">Terror</label><br>
+
+        <input type="radio" id="animacao" name="genero" value="Animação">
+        <label for="animacao">Animação</label><br>
+
+        <input type="radio" id="outro" name="genero" value="Outro">
+        <label for="outro">Outro</label><br>
+        <input type="text" id="generoOutro" name="generoOutro" placeholder="Especificar se outro"><br><br>
+
+        <label for="anoLancamento">Ano de Lançamento:</label><br>
+        <input type="number" id="anoLancamento" name="anoLancamento" min="1900" max="2100" required><br><br>
+
+        <label for="reassistiu">Já assistiu esse filme mais de uma vez?</label><br>
+        <input type="radio" id="simReassistiu" name="reassistiu" value="Sim">
+        <label for="simReassistiu">Sim</label><br>
+
+        <input type="radio" id="naoReassistiu" name="reassistiu" value="Não">
+        <label for="naoReassistiu">Não</label><br><br>
+
+        <label for="franquia">O filme faz parte de uma franquia/saga?</label><br>
+        <input type="radio" id="simFranquia" name="franquia" value="Sim">
+        <label for="simFranquia">Sim</label><br>
+
+        <input type="radio" id="naoFranquia" name="franquia" value="Não">
+        <label for="naoFranquia">Não</label><br><br>
+
+        <label for="opiniao">Qual a sua opinião sobre o filme?</label><br>
+        <textarea id="opiniao" name="opiniao" rows="4" cols="50" placeholder="Escreva sua opinião aqui..." required></textarea><br><br>
+
+        <label for="avaliacao">Avaliação (de 1 a 5 estrelas):</label><br>
+        <select id="avaliacao" name="avaliacao" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br><br>
+
+        <input type="submit" value="Concluído">
+    </form>
+</body>
+</html>
